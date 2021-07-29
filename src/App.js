@@ -46,6 +46,4 @@ const mapDispatchToProps = (dispatch) => ({
 	checkUserSession: () => dispatch(checkUserSession()),
 });
 
-console.log("hi");
-
 export default connect(mapStateToProps, mapDispatchToProps)(App);

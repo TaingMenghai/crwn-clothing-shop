@@ -7,7 +7,7 @@ import { HomePageContainer } from './homepage.styles';
 const HomePage = ({displayName}) => (
   <HomePageContainer>
     	{displayName ? (
-				<h1>{`hi, ${displayName}`}. Welcome to my store :D</h1>
+				<h1>{`Hi, ${displayName}`}. Welcome to my store :D</h1>
 			) : (
 				<h1>Welcome to Menghai store!</h1>
 			)}
