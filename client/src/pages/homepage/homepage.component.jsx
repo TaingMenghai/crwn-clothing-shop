@@ -4,7 +4,8 @@ import Directory from '../../components/directory/directory.component';
 
 import { HomePageContainer } from './homepage.styles';
 
-const HomePage = ({displayName}) => (
+const HomePage = ({displayName}) => {
+  return (
   <HomePageContainer>
     	{displayName ? (
 				<h1>{`Hi, ${displayName}`}. Welcome to my store :D</h1>
@@ -13,7 +14,8 @@ const HomePage = ({displayName}) => (
 			)}
     <Directory />
   </HomePageContainer>
-);
+  )
+};
 
 const mapStateToProps = ({user: {currentUser}}) =>{
   if(!currentUser) return {}
